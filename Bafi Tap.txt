@@ -1,0 +1,42 @@
+$1 = 23000 VNĐ( Bài Tập Chuyển Đổi Tiền Tệ).
+
+BEGIN
+	INPUT USD
+	VND = USD * 23000
+		DISPLAY VND
+END
+---------------------------------------------------
+[Bài tập] Thuật Toán Tính Điểm Trung Bình (Toán Lý Hóa).
+
+BEGIN
+	INPUT a,b,c
+	total = (a + b +c) % 3
+		DISPLAY total
+END
+--------------------------------------------------------
+[Bài tập] Mô tả thuật toán tìm giá trị lớn nhất trong 3 số.
+
+BEGIN
+	INPUT a,b,c
+		IF a > b
+			DISPLAY ' a là giá trị lớn nhất '
+		ElSE a < b
+			DISPLAY ' b là giá trị lớn nhất '
+		IF a > c
+			DISPLAY ' a là giá trị lớn nhất '
+		ELSE a < c
+			DISPLAY ' c là giá trị lớn nhất '
+END
+-----------------------------------------------------------------
+[Bài tập] Mô tả thuật toán tìm giá trị lớn nhất trong một dãy số.
+	
+BEGIN
+	INPUT n
+	IF n > a1, a2, a3, ... , ai 
+	IF max = a1 
+	
+
+	
+	
+	
+		
