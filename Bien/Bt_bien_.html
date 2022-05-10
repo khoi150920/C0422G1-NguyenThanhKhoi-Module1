@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến,KieuDulieu</title>
+</head>
+<body>
+<label>
+    TOAN<input type="text" id="toan">
+    HOA<input type="text" id="hoa">
+    SINH<input type="text" id="sinh"><br>
+    DIEMTRUNGBINH: <p id="diemtrungbinh">0</p>
+    TONGLA:<p id="tong">0</p></label>
+<button type="button" onclick="tinhtoan()">Tính toán</button><hr/>
+<script>
+    function tinhtoan() {
+        var z=document.getElementById('toan').value;
+        var y=document.getElementById('hoa').value;
+        var c=document.getElementById('sinh').value;
+        document.getElementById('diemtrungbinh').innerHTML = (parseInt(z)+parseInt(y)+parseInt(c))/3
+        document.getElementById('tong').innerHTML = (parseInt(z)+parseInt(y)+parseInt(c))
+    }
+</script>
+</body>
+
+<body>
+<label>
+    Do_C:<input type="text" id="do_C">
+    <button type="button" onclick="chuyendoi()">chuyendoi</button><br>
+    Do_F:<span id="do_F">0</span></p><br>
+<script>
+    function chuyendoi() {
+        var z=document.getElementById('do_C').value;
+        document.getElementById('do_F').innerHTML = (parseInt(z)/5*9)+32;
+    }
+</script>
+</label>
+</body>
+
+
+<body>
+
+    <input type="number" id="banKinh"><br>
+    <p>DienTichHinhTronLa:<span id="ketQua"> 0 </span></p><br>
+    <p>ChuViHinhTronLa:<span id="ketQua1">0 </span></p>
+    <button type="button" onclick='DienTichHinhTron()'>Dientich</button>
+
+<script>
+    function DienTichHinhTron() {
+
+        var m=document.getElementById("banKinh").value;
+        let result =  parseInt(m)*parseInt(m)*Math.PI;
+        document.getElementById("ketQua").innerHTML = result;
+        document.getElementById("ketQua1").innerHTML = 2*m*Math.PI;
+    }
+
+</script>
+
+
+
+</body>
+</html>

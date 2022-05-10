@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <tr>NHẬP SỐ TIỀN:<input type="number" id="nhapvao"></tr>
+
+    <tr>
+        <td><select id="o1">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option></select>
+    </td>
+
+        <td><select id="o2">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select></td>
+    </tr>
+    <button type="button"onclick="SOTIEN()"style="background-color:mediumpurple;color:red">SOTIEN</button><br>
+        SOTIENLA:<span type="text" id="ketqua">0</span>
+</form>
+<script>
+    function SOTIEN() {
+        var q = document.getElementById('nhapvao').value;
+        var w = document.getElementById('o1').value;
+        var e = document.getElementById('o2').value;
+        if (w == "VND" && e == 'USD') {
+            document.getElementById('ketqua').innerHTML = parseInt(q) / 23000 + '$';
+        }
+        if (w == "USD" && e == 'VND') {
+            document.getElementById('ketqua').innerHTML = parseInt(q) * 23000 + 'VND';
+        }
+        if (w == "VND" && e == 'VND') {
+            document.getElementById('ketqua').innerHTML = q + 'VND';
+        }
+        if (w == "USD" && e == 'USD') {
+            document.getElementById('ketqua').innerHTML = q + '$';
+        }
+    }
+</script>
+
+</body>
+</html>
