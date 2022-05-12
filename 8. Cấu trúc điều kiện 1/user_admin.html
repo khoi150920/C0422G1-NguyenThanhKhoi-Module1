@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> thuchhanh </title>
+</head>
+<body>
+    <script>
+        let userName = prompt("Who's there?", '');
+        if (userName == 'Admin') { //Nếu là admin//
+            let pass = prompt('Password?', '');//Hiện Password//
+            if (pass == 'TheMaster') { //Nếu là TheMaster//
+                alert('Welcome!'); //Hiện Welcome//
+            } else if (pass == null) { //Nếu là null//
+                alert('Canceled.');
+            } else {
+                alert('Wrong password');
+            }
+        } else if (userName == null) {
+            alert('Canceled');
+        } else {
+            alert("I don't know you");
+        }
+    </script>
+
+</body>
+</html>

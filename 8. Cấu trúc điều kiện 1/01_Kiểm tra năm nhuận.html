@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> kiem_tra_nam_nhuan </title>
+</head>
+<body>
+    <script>
+        let year = parseInt(prompt("NhapSoNam"));
+        if (year % 4 == 0) { //chia 4 lấy dư so sánh giá trị với
+            if (year % 100 == 0) {0 //chia lấy dư 100 so sánh giá trị với 0
+                if (year % 400 == 0) { // chia lấy dư 400 so sánh giá trị với0 //
+                    alert(year + " LaNamNhuan");
+                } else { //Ngượclai//
+                    alert(year + " KhongLaNamNhuan"); //Hienthi//
+                }
+            } else {
+                alert(year + " LaNamNhuan");
+            }
+        } else {
+            alert(year + " KhongLaNamNhuan");
+        }
+    </script>
+
+</body>
+</html>
