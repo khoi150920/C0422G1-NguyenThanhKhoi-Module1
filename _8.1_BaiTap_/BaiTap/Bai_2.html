@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+NhapSoTuoi:<input type="number" id="st">
+<button onclick="ketQua()" id="kq">KETQUA</button><br>
+<p id="in"></p>
+<script>
+    function ketQua() {
+    var st=document.getElementById('st').value;
+        (st >= 16)? document.getElementById('in').innerHTML= st + 'Đã Đủ Điều Kiện': document.getElementById('in').innerHTML= st + "Chưa Đủ Điều Kiện "    }
+</script>
+</body>
+
+</html>

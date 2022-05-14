@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Nhap A:<input type="number" id="a"><br>
+    Nhap B:<input type="number" id="b"><br>
+    <button type="button" onclick="ketQua()">KETQUA</button>
+    <p id ="c"></p><hr/>
+<script>
+    function ketQua() {
+        var x = parseInt(document.getElementById('a').value);
+        var y = parseInt(document.getElementById('b').value);
+        (x % y == 0) ? document.getElementById('c').innerHTML = x + "Chia Het Cho " + y : document.getElementById('c').innerHTML = x + "Khong Chia Het Cho " + y;
+
+    }
+</script>
+</body>
+</html>

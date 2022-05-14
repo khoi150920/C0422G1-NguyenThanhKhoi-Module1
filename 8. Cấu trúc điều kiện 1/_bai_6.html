@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong= parseInt(prompt("nhập lương"))
+    let phanTramdoanhthu= prompt("phần trăm doanh thu")
+    if (phanTramdoanhthu>100){
+        luong += 50;
+    } else if (phanTramdoanhthu>75){
+        luong += 25;
+    }
+    alert('lương:' + luong + '$');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+NhapVao<input type="number" id="sn">
+<button onclick="ketQua()">KETQUA</button>
+<p id="qw">KETQUA:</p>
+<script>
+    function ketQua() {
+        var a=document.getElementById('sn').value;
+        if ( a > 0 ) {
+            document.getElementById('qw').innerHTML= a + "lon Hon 0"
+        }
+
+        else if ( a < 0 ) {
+            document.getElementById('qw').innerText= a + "Nho Hon 0"
+        }
+        else {
+            document.getElementById("qw").innerHTML= "Day La So 0"
+        }
+
+    }
+</script>
+
+</body>
+</html>
