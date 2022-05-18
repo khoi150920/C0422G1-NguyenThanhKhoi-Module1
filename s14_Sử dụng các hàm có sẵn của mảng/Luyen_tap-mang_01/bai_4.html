@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó</title>
+</head>
+<body>
+    <script>
+        let sn=[]
+        let x=[]
+        let a=-1
+        for (let i=0;i<10;i++){
+          sn[i] = parseInt(prompt('Nhap So Nguyen') )
+        }
+        console.log(sn)
+        for (i=sn.length;i>=0;i--) {
+            x[a++]= sn[i]
+        }
+        document.write(x)
+    </script>
+
+</body>
+</html>

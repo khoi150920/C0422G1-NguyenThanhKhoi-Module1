@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>Nhập Từ Cần Tìm Kiếm</h1>
+    <input type="text" size="100" id="id">
+    <button type="button" id="tk" onclick="tk()">Search</button><br>
+    <label id="view"></label>
+</center>
+    <script>
+        let el=["Red","Blu","Black"]
+        let tv  =["Do","Xanh","Den"]
+        function tk() {
+            let a=document.getElementById('id').value;
+         for (let i=0;i<el.length;i++){
+             if(el[i]==a){
+                 document.getElementById('view').innerText=tv[i]
+             }else {
+
+             }
+         }
+            alert('Khong Co Trong Tu Dien')
+        }
+
+
+
+    </script>
+</body>
+</html>

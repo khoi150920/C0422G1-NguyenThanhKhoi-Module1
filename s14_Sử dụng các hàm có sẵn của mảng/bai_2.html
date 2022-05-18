@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str=prompt('Nhap So :');
+        let arr = []
+        arr = str.split(""); // gán giá trị cho arr2//
+        let arr2= arr[0]
+        console.log(arr)
+        for(let i =1;i<arr.length; i++) {
+            if (arr[i - 1] % 2 == 0 && arr[i] % 2 == 0) {
+                arr2=arr2+'-'+arr[i]
+            }else{
+                arr2=arr2+arr[i]
+            }
+        }document.write(arr2)
+
+
+    </script>
+
+</body>
+</html>

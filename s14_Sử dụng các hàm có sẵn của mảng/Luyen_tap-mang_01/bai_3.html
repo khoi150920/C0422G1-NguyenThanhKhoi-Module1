@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng</title>
+</head>
+<body>
+    <script>
+        let ngt=[]
+        let a=[]
+        let gt=[]
+        for(let i=0;i<10;i++){
+            ngt[i]= parseInt(prompt(' Nhap So Nguyen:'+(i+1)))
+            if (ngt[i]>a){
+                a=ngt[i]
+                gt=[i]
+            }
+        }
+        document.write(ngt+'<br>')
+        document.write('So Lon Nhat Trong Mang La:' + gt)
+        document.write('Trung Binh La: '+ a /10)
+
+    </script>
+
+</body>
+</html>

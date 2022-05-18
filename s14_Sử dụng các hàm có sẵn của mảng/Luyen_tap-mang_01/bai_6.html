@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array"</title>
+</head>
+<body>
+    <script>
+        let arr=[]
+
+        for (let i=0;i<10;i++){
+            arr[i]=parseInt(prompt('Nhap So Nguyen')+(i+1)+'Phan Tu.')
+        }
+        let v= parseInt(prompt('Nhap So Nguyen V:'))
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]=v){
+                document.write('is in the array')
+                break
+            }
+            else {
+                document.write('is not in the array')
+            }
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>
