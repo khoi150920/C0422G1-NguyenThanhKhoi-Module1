@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        let q=  ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+        let w= ['Urs Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major' , 'Leo'];
+        let r=prompt('Tim Em Di:');
+        let count=0
+        for (let i=0;i<q.length;i++){
+            if (q[i]===r){
+                document.write(w[i])
+                count=0
+                break;
+            }else {
+                count++
+            }
+        }
+            if (count>0){
+            document.write('Nhap Sai Roi Anh Tam ei:')
+        }
+
+
+    </script>
+
 </body>
 </html>
