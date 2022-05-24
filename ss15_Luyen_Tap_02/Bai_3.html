@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</title>
 </head>
 <body>
-$END$
+    <script>
+        let b=parseInt(prompt('Nhap Gia Tri:'));
+        function giaiThua(b) {
+            let giaiThua=1;
+            for (let i=1;i<=b;i++){
+                giaiThua *= i;
+            }
+            return giaiThua;
+        }
+        document.write('Giai Thua' +b+'La:'+giaiThua(b));
+    </script>
+
 </body>
 </html>

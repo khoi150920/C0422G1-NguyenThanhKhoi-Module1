@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó</title>
 </head>
 <body>
-$END$
+    <script>
+        let arr=[1,2,4,5,6,7,8,9,10];
+        function daoNguoc(arr) {
+            let arr1=[]
+            for(let i=0;i<arr.length;i++){
+                arr1[arr.length-1-i]=arr[i]
+            }
+            return arr1
+        }
+        document.write("[" +arr+ "]"+ "<br>")
+        document.write("Mang Sau Khi Dao:"+"<br>")
+        document.write("["+daoNguoc(arr)+"]")
+    </script>
+
 </body>
 </html>

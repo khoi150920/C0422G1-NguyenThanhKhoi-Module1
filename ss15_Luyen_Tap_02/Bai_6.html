@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả
+        về true, ngược lại trả về false.</title>
 </head>
 <body>
-$END$
+<script>
+    let nd = prompt('Nhap Vao Day');
+
+    function nguyenDuong(nd) {
+        if (nd % 1 == 0 && nd > 0) {
+            alert('true');
+            return nd;
+        } else {
+            alert('false')
+        }
+    }
+
+    nguyenDuong(nd)
+</script>
+
 </body>
 </html>

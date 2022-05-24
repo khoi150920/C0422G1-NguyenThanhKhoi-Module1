@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</title>
 </head>
 <body>
-$END$
+    <script>
+        let bk=prompt('Nhap BK:')
+        function dienTich(bk) {
+            return bk*bk*Math.PI
+        }
+        document.write('Dien Tich La:'+dienTich(bk))
+        function chuVi(bk) {
+            return bk*2*Math.PI
+        }
+        document.write("<br>")
+        document.write('Chu Vi La:'+chuVi(bk))
+
+    </script>
+
 </body>
 </html>
