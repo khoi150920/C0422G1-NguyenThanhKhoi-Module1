@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển ứng dụng mô phỏng lại quá trình mèo bắt chuột và ăn chuột.</title>
+</head>
+<body>
+    <script>
+        class Mouse {
+            status;
+            sound_m;
+
+            constructor(name,mass,speed) {
+
+                this.Rat_m = rat
+                this.mass_m = mass
+                this.speed_m = speed
+                this.live_m = live
+                this.die_m = die
+            }
+
+            getStatus() {
+                if (this.status) {
+                    alert("Chuột Live");
+                } else {
+                    alert('Chuột Die');
+                }
+            }
+
+            Die() {
+                return this.status = false;
+            }
+
+            notDie() {
+                return this.status = true;
+            }
+
+            actionMouse(sound) {
+                this.sound_m = sound;
+                alert(this.sound_m);
+            }
+        }
+
+        class Cat{
+            sound_c;
+            constructor(nam,mass,speed,mouse) {
+                this.name_c= name;
+                this.mass_c=mass;
+                this.speed_c= speed;
+                this.mouse= mouse;
+            }
+            getMass_c(){
+                return this.mass_c;
+            }
+            setSound_c(){
+                return this.sound_c
+            }
+            actioncat(sound){
+                alert(this.sound_c);
+            }
+            catchTheMouse(){
+                if(this.mouse.speed_m<this.speed_c){
+                    alert('Con chuột chết tiệt này đã bị mèo đẹp trai bắt')
+                }
+                else{
+                    alert("Con mèo này chơi cỏ mèo rồi ngu quá")
+                }
+            }
+            eatTheMouse(){
+                if(this.mouse.status){
+                    this.mass_c= this.mass_c+ this.mouse.
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
