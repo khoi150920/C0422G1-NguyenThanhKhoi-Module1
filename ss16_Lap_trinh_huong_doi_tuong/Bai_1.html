@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhậtAssignment</title>
+</head>
+<body>
+<canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+        class Rectangle{
+            constructor (dai, rong){
+                this.dai = dai
+                this.rong = rong
+            }
+
+            getDai(){
+                return this.dai;
+            }
+            getRong(){
+                return this.rong;
+            }
+
+            setDai(dai){
+                this.dai = dai;
+            }
+            setRong(rong){
+                this.rong = rong;
+            }
+
+            getDienTich(){
+                return this.rong * this.dai;
+            }
+            getChuVi(){
+                return (this.rong + this.dai)/2;
+            }
+        }
+        let a= new Rectangle(10,5)
+        document.write('Dien Tich La:'+ a.getDienTich()+"<br>");
+
+        a.setDai(9)
+        a.setRong(8)
+
+        document.write('DienTichHinhChuNhatNew:'+ a.getDienTich()+'<br>')
+
+        document.write('Chu Vi la:' + a.getChuVi());
+
+        let canvas = document.getElementById("DemoCanvas");
+        let ctx = canvas.getContext('2d');
+        ctx.fillStyle='#fa4b2a';
+        ctx.fillRect(10, 10, rong, dai)
+    </script>
+
+</body>
+</html>

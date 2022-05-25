@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            constructor(C){
+                this.C= C;
+            }
+            getC(){
+                return this.C;
+            }
+            setC(C){
+                this.C= C;
+            }
+            getCtoF(){
+                return (this.C*9/5+32);
+            }
+            getCtoK(){
+                return (this.C + 273);
+            }
+        }
+        let temperature = new Temperature();
+        let c = parseInt(prompt(" Do C can chuyen "))
+        temperature.setC(c);
+        if (c>-273){
+            let C = temperature.getC();
+            let F = temperature.getCtoF();
+            let K= temperature.getCtoK();
+            document.write(" nhiet do C la : "+ C +" do C " + " thanh do F: "+ F + " độ F "  + " thanh nhiet do Kenvin la : " + K + " do K" )
+
+        }else {
+            document.write(" Nhap Do C khong dung:")
+        }
+
+    </script>
+
+</body>
+</html>
