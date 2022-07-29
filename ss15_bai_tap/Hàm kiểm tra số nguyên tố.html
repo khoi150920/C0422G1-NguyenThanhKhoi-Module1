@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Hàm kiểm tra số nguyên tố</title>
 </head>
 <body>
-$END$
+<script>
+    let n = parseInt(prompt('Nhap So Nguyen To Can Kiem Tra:'));
+    if(isPrime(n) === true){
+        alert("day la snt")
+    }else {
+        alert("khong phai snt")
+    }
+    // isPrime(n);
+
+    function isPrime(n) {
+        // số nguyên tố là nguyên lớn 1 và là số chia hết cho 1 và chính nó
+        // chia tu 2 => n - 1
+        if(n <= 1){
+            return false;
+        }
+        for( let i = 2 ; i < n; i ++){
+            if(n % i ===0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+</script>
+
 </body>
 </html>

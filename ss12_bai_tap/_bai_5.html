@@ -6,11 +6,16 @@
 </head>
 <body>
     <script>
-        let f=1
-        let f2=1
-        let f0=0
-        let n=f+(n-1)+f
+    let firstnumber = 0 ;
+    let secondnumber = 1;
+    let number ;
+    let total = 0;
+    for (let i=0;i<=20;i++){
+        number=firstnumber+secondnumber ;
+        firstnumber=secondnumber ;
+        secondnumber=number ;
+        total = total + number ;
+    }document.write(total)
     </script>
-
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Date Bang Class</title>
+</head>
+<body>
+    <script>
+        class Date{
+            constructor (day, month, year){
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            }
+            getDay(){
+                return this.day
+            }
+            getMonth(){
+                return this.month
+            }
+            getYear(){
+                return this.year
+            }getDate(){
+                return (this.day + "/" + this.month + "/" + this.year)
+            }
+
+            setDay(){
+                this.day = day;
+            }
+            setMonth(){
+                this.month = month
+            }
+            setYear(){
+                this.year = year
+            }
+
+        }
+        let date2= new Date(15, 09, 2000);
+        document.write(date2.getDate())
+
+    </script>
+
+</body>
+</html>

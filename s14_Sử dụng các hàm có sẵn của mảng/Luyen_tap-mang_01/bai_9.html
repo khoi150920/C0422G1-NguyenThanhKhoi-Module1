@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        let a=Array(10)
+        let b=Array(10)
+        let c=[]
+        for (let i=0;i<10;i++){
+            a= parseInt(prompt('Nhap Vao' +(i+1)+ 'Mang A'))
+            b= parseInt(prompt('Nhap Vao' +(i+1)+ 'Mang B'))
+        }
+        for (let j=0; j<(a.length + b.length); j++){
+            if (j<a.length) {
+                c[j]=a[j]
+            }else {
+                c[j]=b[j-b.length]
+            }
+        }
+        document.write(c)
+
+    </script>
 </body>
 </html>

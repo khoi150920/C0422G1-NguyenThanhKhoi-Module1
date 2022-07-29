@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let num = parseInt(prompt("Input the number of elements in the array: "));
+    let a = Array(num);
+    let count = 0;
+    for (let i = 0; i < num; i++) {
+        a[i] = prompt('Input  '+ i + ":");
+    }
+    document.write("Mang bao gom: "+ a+'<br>');
+    for (let i = 0; i < a.length; i++) {
+        if (!isNaN(a[i])) count++;
+    }
+    document.write('So ky tu so trong mang: '+count);
+</script>
+
 </body>
 </html>

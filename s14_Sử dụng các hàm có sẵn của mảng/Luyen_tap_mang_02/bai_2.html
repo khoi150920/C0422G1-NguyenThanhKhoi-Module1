@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    let number = prompt('so luong phan tu cua mang')
+    for (let i = 0; i < number; i++) {
+        arr[i] = prompt('Nhập giá trị phần tử trong mảng' )
+    }
+    document.write('arr = ['+arr + ']<br>')
+    let first = 0;
+    let last = arr.length -1;
+    while (first < last) {
+        c= arr[first];
+        arr[first] = arr[last];
+        arr[last] = c;
+        first++;
+        last--;
+    }
+    document.write(arr)
+</script>
 </body>
 </html>

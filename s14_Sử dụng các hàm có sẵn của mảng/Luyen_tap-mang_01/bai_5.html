@@ -6,7 +6,16 @@
 </head>
 <body>
     <script>
-
+        let arr=[]
+        let count=[]
+        for(let i=0;i<10;i++){
+            arr[i]=parseInt(prompt('Nhap Phan Tu'+(i+1)+'Vao Mang'))
+            if(arr[i]<0){
+                count++
+            }
+        }
+        document.write(arr)
+        document.write('<br>Trong Mang Co'+count+'Phan Tu So Nguyen Am')
     </script>
 
 </body>
